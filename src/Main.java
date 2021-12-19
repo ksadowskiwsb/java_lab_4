@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         /* zad.1
         a) Stwożyć interfejs Budynek,
@@ -27,5 +27,24 @@ public class Main {
         b) wykorzystać wszystkie metody do implementacji pól
         c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
         */
+
+        Dom dom1 = new Dom();
+        Budynek dom2 = new Dom();
+
+        dom1.setPowierzchnia(200);
+        dom1.setAdres("Kowalskiego 21");
+        dom1.setkolorDomu(KolorEnum.BIAŁY);
+        dom1.setliczbaMieszkańców(10);
+        dom1.setLiczbaOkien(5);
+
+        dom2.setAndGetPowierzchnia(150);
+        dom2.setAndGetAdres("Nowaka 3");
+        dom2.setkolorDomu(KolorEnum.CZEROWNY);
+        dom2.setliczbaMieszkańców(3);
+        dom2.setAndGetLiczbaOkien(15);
+
+        System.out.println(dom1);
+        System.out.println(dom2);
+
     }
 }
